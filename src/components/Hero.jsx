@@ -1,5 +1,5 @@
 import {HERO_CONTENT} from "../constants";
-import profilePic from "../assets/logo.webp";
+import logo from "../assets/logo.webp";
 import {motion} from "framer-motion";
 
 const container = (delay) => ({
@@ -43,15 +43,18 @@ const Hero = () => {
               </motion.p>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 lg:p-8">
-            <div className="flex justify-center">
-            <motion.img
-            initial={{x:100, opacity:0}}
-            animate={{x:0, opacity:1}}
-            transition={{duration:1,delay:1.2}}
-             src={profilePic} alt="Kevin Rush"/>
-            </div>
-          </div>
+          <div className="w-full lg:w-1/2 lg:p-8 lg:mt-20">
+  <div className="flex justify-center">
+    <motion.img
+      initial={{ x: 100, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1, delay: 1.2 }}
+      src={logo}
+      alt="minicraft"
+    />
+  </div>
+</div>
+
         </div>
       </div>
     );
